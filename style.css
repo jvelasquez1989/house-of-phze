@@ -1,0 +1,361 @@
+body {
+  margin: 0;
+  font-family: 'Verdana', Arial, sans-serif;
+  background: #f9fbff;
+  color: #182848;
+}
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+.sidebar {
+  background: #e2eafd;
+  width: 260px;
+  min-width: 180px;
+  padding: 24px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-pic img {
+  width: 100px;
+  height: 100px;
+  border-radius: 80px;
+  border: 3px solid #6ba4fd;
+  margin-bottom: 8px;
+}
+.artist-name {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.nav-links {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+.nav-links li {
+  margin: 12px 0;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #2343a3;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+.nav-links a.active, .nav-links a:hover {
+  color: #55a6ff;
+}
+.sidebar-social {
+  margin: 18px 0;
+  display: flex;
+  gap: 10px;
+}
+.sidebar-social img {
+  width: 24px;
+  height: 24px;
+}
+.sidebar-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.sidebar-actions button {
+  background: #55a6ff;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 7px 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.sidebar-actions button:hover {
+  background: #2343a3;
+}
+.top8-section {
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 30px;
+  padding: 10px;
+  width: 100%;
+}
+.top8-section h3 {
+  margin-top: 0;
+  font-size: 1em;
+  margin-bottom: 6px;
+}
+.top8-section ol {
+  padding-left: 16px;
+}
+.top8-section li {
+  margin-bottom: 4px;
+  font-size: 0.98em;
+}
+.sidebar-logo {
+  margin-top: 30px;
+  text-align: center;
+}
+.main-content {
+  flex: 1;
+  padding: 0 32px 32px 32px;
+  background: #fff;
+  min-width: 0;
+}
+.banner-section {
+  position: relative;
+  width: 100%;
+  margin-bottom: 24px;
+  min-height: 180px;
+}
+.banner-overlay {
+  position: absolute;
+  left: 32px;
+  bottom: 20px;
+  background: rgba(255,255,255,0.85);
+  padding: 20px 28px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px #0002;
+  max-width: 60%;
+}
+.banner-overlay h2 {
+  font-size: 2.2em;
+  margin: 0 0 8px 0;
+  letter-spacing: 3px;
+}
+.bio {
+  font-size: 1.12em;
+  margin-bottom: 10px;
+}
+.share-btn {
+  background: #2343a3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 18px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 6px;
+}
+.music-section {
+  margin: 32px 0 18px 0;
+}
+.music-highlight {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+.single-cover {
+  width: 95px;
+  height: 95px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #6ba4fd;
+}
+.music-list > div {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.music-links a {
+  margin-right: 12px;
+  font-size: 0.98em;
+  color: #2343a3;
+  text-decoration: underline;
+}
+.visualizer-section {
+  margin: 24px 0;
+  text-align: center;
+}
+.visualizer-section video {
+  width: 100%;
+  max-width: 640px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px #0001;
+}
+.events-section {
+  margin: 28px 0;
+}
+.events-list {
+  list-style: none;
+  padding: 0;
+}
+.events-list li {
+  margin-bottom: 12px;
+  background: #e2eafd;
+  border-radius: 7px;
+  padding: 8px 12px;
+}
+.mailing-list {
+  margin: 28px 0;
+}
+.mailing-list input[type="email"] {
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid #6ba4fd;
+  margin-right: 5px;
+}
+.mailing-list button {
+  padding: 7px 16px;
+  border-radius: 5px;
+  border: none;
+  background: #55a6ff;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.blog-section {
+  margin: 28px 0;
+}
+.blog-list {
+  list-style: none;
+  padding: 0;
+}
+.blog-list li {
+  margin-bottom: 8px;
+  background: #f4f8ff;
+  border-radius: 6px;
+  padding: 7px 10px;
+}
+.gallery-section {
+  margin: 28px 0;
+}
+.gallery {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.gallery img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #6ba4fd;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0; right: 0; bottom: 0;
+  background: rgba(0,0,32,0.8);
+  justify-content: center;
+  align-items: center;
+}
+.modal img {
+  max-width: 85vw;
+  max-height: 75vh;
+  border-radius: 18px;
+  box-shadow: 0 4px 28px #0005;
+}
+.video-gallery-section {
+  margin: 32px 0;
+}
+.video-embeds {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.comment-wall-section {
+  margin: 30px 0;
+}
+#guestbook-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 16px;
+}
+#guestbook-form input,
+#guestbook-form textarea {
+  border: 1px solid #6ba4fd;
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 1em;
+}
+#guestbook-form button {
+  align-self: flex-end;
+  background: #2343a3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 18px;
+  font-size: 1em;
+  cursor: pointer;
+}
+#guestbook {
+  list-style: none;
+  padding: 0;
+  max-width: 450px;
+}
+#guestbook li {
+  background: #f7faff;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  padding: 8px 10px;
+  font-size: 0.97em;
+}
+#guestbook li strong {
+  color: #2343a3;
+}
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #2343a3;
+  font-size: 1.07em;
+  padding-bottom: 10px;
+}
+@media (max-width: 950px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    flex-direction: row;
+    width: 100%;
+    min-width: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 10px;
+  }
+  .main-content {
+    padding: 0 10px 20px 10px;
+  }
+  .banner-overlay {
+    max-width: 95%;
+    left: 10px;
+    padding: 12px 14px;
+  }
+}
+@media (max-width: 600px) {
+  .sidebar {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+    padding: 7px 2px;
+  }
+  .main-content {
+    padding: 0 2px 20px 2px;
+  }
+  .banner-overlay {
+    max-width: 98%;
+    left: 5px;
+    padding: 8px 9px;
+  }
+  .gallery img {
+    width: 75px;
+    height: 75px;
+  }
+}
